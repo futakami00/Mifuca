@@ -41,10 +41,10 @@ type BlogPageProps = {
 
 const BlogTitle = styled.h2`
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #461b3a;
-  border-top: solid 2px #461b3a;
-  border-bottom: solid 3px #461b3a;
+  text-decoration: underline;
+  margin: 2rem 0;
 `
 
 export const BlogPage: React.FC<BlogPageProps> = ({ data }) => {

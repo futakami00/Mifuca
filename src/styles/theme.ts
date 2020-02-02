@@ -77,11 +77,11 @@ export const skins = {
     color: '#6a5140'
   },
   about: {
-    bg: '#e6b4d2',
+    bg: '#dcaac8',
     color: '#fff'
   },
   works: {
-    bg: 'linear-gradient(to right, #ff7e15, #c85bfa)',
+    bg: 'linear-gradient(to right, #753a88, #cc2b5e)',
     color: '#fff'
   },
   notFound: {
