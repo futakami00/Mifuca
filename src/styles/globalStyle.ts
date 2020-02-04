@@ -96,7 +96,16 @@ export const globalStyle = css`
       color: ${theme.colors.primary};
     }
   }
-
+  blockquote {
+    display: block;
+    font-style: italic;
+    background: #efefef;
+    padding: 0.5rem 1rem;
+    border-left: 10px solid #ddd;
+    @media screen and (max-width: ${theme.breakpoints.md}) {
+      margin: 0;
+    }
+  }
   ${reset}
 `
 

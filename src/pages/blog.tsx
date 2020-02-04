@@ -39,12 +39,19 @@ type BlogPageProps = {
   }
 }
 
-const BlogTitle = styled.h2`
+const PageTitleTop = styled.div`
   text-align: center;
-  font-size: 2rem;
-  color: #461b3a;
-  text-decoration: underline;
-  margin: 2rem 0;
+  font-style: italic;
+  font-size: 1.75rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  color: #bae9c7;
+  border-bottom: double 4px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  @media (max-width: ${theme.breakpoints.md}) {
+    font-size: 1.25rem;
+  }
 `
 
 export const BlogPage: React.FC<BlogPageProps> = ({ data }) => {
@@ -53,7 +60,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({ data }) => {
     <IndexLayout skin={skins.blog}>
       <Page>
         <PostWrapper>
-          <BlogTitle>Mifuca/Fragment</BlogTitle>
+          <PageTitleTop>Latest Articles</PageTitleTop>
           <div>
             {posts.map(({ node }) => (
               <PostCard key={node.fields.slug} node={node} />

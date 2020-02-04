@@ -1,3 +1,6 @@
+import 'prismjs/themes/prism-okaidia.css'
+import './src/styles/code-syntax-highlight.css'
+
 /**
  * Implement Gatsby's Browser APIs in this file.
  *

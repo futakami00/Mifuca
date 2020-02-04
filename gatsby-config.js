@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Mifuca.net',
-    description: '技術的なブログ',
+    description: 'プログラミング、デザインの技術メモ。兼ポートフォリオ',
     keywords: 'gatsbyjs, gatsby, javascript, sample, something',
     siteUrl: 'https://mifuca.net',
     author: {
@@ -23,12 +23,24 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: 'gatsby-remark-code-titles'
+          },
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              classPrefix: 'language-',
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false
+            }
+          },
+          {
             resolve: 'gatsby-remark-responsive-iframe',
             options: {
               wrapperStyle: 'margin-bottom: 1rem'
             }
           },
-          'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           {
@@ -46,7 +58,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com'
+        siteUrl: 'https://mifuca.net'
       }
     },
     'gatsby-plugin-emotion',

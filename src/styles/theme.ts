@@ -73,8 +73,8 @@ export const skins = {
     color: '#461b3a'
   },
   post: {
-    bg: '#90afc5',
-    color: '#6a5140'
+    bg: '#faeee7',
+    color: '#594a4e'
   },
   about: {
     bg: '#dcaac8',
