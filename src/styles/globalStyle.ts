@@ -42,13 +42,13 @@ export const globalStyle = css`
     }
 
     h1 {
-      font-size: ${theme.fontSizes[5]};
-    }
-    h2 {
       font-size: ${theme.fontSizes[4]};
     }
-    h3 {
+    h2 {
       font-size: ${theme.fontSizes[3]};
+    }
+    h3 {
+      font-size: ${theme.fontSizes[2]};
     }
     h4 {
       font-size: ${theme.fontSizes[2]};

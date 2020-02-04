@@ -26,7 +26,7 @@ const theme: ThemeShape = {
     lg: '992px',
     xl: '1200px'
   },
-  fontSizes: ['0.75rem', '1rem', '1.2rem', '1.44rem', '1.728rem', '2.074rem', '2.488rem'],
+  fontSizes: ['0.75rem', '1rem', '1.25rem', '1.5rem', '1.75rem', '2rem', '2.488rem'],
   colors: {
     primary: '#15b0c2',
     secondary: '#494992',
