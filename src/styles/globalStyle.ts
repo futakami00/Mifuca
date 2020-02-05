@@ -42,13 +42,13 @@ export const globalStyle = css`
     }
 
     h1 {
-      font-size: ${theme.fontSizes[4]};
+      font-size: ${theme.fontSizes[5]};
     }
     h2 {
-      font-size: ${theme.fontSizes[3]};
+      font-size: ${theme.fontSizes[4]};
     }
     h3 {
-      font-size: ${theme.fontSizes[2]};
+      font-size: ${theme.fontSizes[3]};
     }
     h4 {
       font-size: ${theme.fontSizes[2]};
@@ -103,7 +103,7 @@ export const globalStyle = css`
     padding: 0.5rem 1rem;
     border-left: 10px solid #ddd;
     @media screen and (max-width: ${theme.breakpoints.md}) {
-      margin: 0;
+      margin: 1.25rem 0;
     }
   }
   ${reset}
