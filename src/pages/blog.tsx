@@ -42,7 +42,7 @@ type BlogPageProps = {
 const PageTitleTop = styled.div`
   text-align: center;
   font-style: italic;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   letter-spacing: 0.1rem;
   font-weight: 500;
   color: #bae9c7;
