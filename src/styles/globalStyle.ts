@@ -97,6 +97,7 @@ export const globalStyle = css`
     }
   }
   blockquote {
+    position: relative;
     display: block;
     font-style: italic;
     background: #efefef;

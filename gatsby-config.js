@@ -30,7 +30,7 @@ module.exports = {
             options: {
               classPrefix: 'language-',
               inlineCodeMarker: null,
-              aliases: {},
+              aliases: { sh: 'bash' },
               showLineNumbers: false,
               noInlineHighlight: false
             }

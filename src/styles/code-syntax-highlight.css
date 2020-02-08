@@ -1,10 +1,19 @@
+code[class*="language-"],
+pre[class*="language-"] {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap : break-word;
+  overflow: auto;
+}
+
 .gatsby-code-title {
   display: table;
-  background: #000;
+  background: #9c9696;
   color: #fff;
-  margin-bottom: -0.8em;
-  padding: 0.7rem 1.05rem;
-  font-size: 0.8em;
+  margin-bottom: -0.7rem;
+  padding: 0.8rem 1.05rem;
+  font-size: 0.85rem;
+  font-weight: 600;
   line-height: 0.2;
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 
