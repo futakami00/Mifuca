@@ -13,6 +13,33 @@ const Content = styled.div`
     padding: 2rem 1.25rem;
   }
 `
+
+const Section = styled.section`
+  h2 {
+    text-align: center;
+    border-top: solid 2px;
+    border-bottom: solid 1px;
+    margin: 2.5rem auto;
+    padding: 0.5rem;
+  }
+  h3 {
+    border-bottom: solid 2px;
+    margin: 2rem 0 1.5rem;
+    padding-left: 0.75rem;
+  }
+  h4 {
+    border-left: solid 6px #ddd;
+    margin: 2rem 0 1rem;
+  }
+  a {
+    color: ${props => props.theme.colors.primary};
+    &:hover,
+    &:focus {
+      color: ${props => props.theme.colors.secondary};
+    }
+  }
+`
+
 const Return = styled(Link)`
   display: block;
   margin-right: 1.25rem;
@@ -49,10 +76,12 @@ const PageTemplate: React.FC<PageTemplateProps> = ({ data }) => (
   <IndexLayout skin={skins.post}>
     <Page>
       <Content>
-        <time>{data.markdownRemark.frontmatter.date}</time>
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
-        {/* eslint-disable-next-line react/no-danger */}
-        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+        <Section>
+          <time>{data.markdownRemark.frontmatter.date}</time>
+          <h1>{data.markdownRemark.frontmatter.title}</h1>
+          {/* eslint-disable-next-line react/no-danger */}
+          <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+        </Section>
       </Content>
       <Return to="/blog">＜＜ 記事一覧に戻る</Return>
     </Page>
